@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy PC Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <div class="site-branding">
+        <h1>Easy PC Builder</h1>
+        <p>Build your dream PC with ease.</p>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Prebuilts</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="pc-builder-section">
+        <div class="section-heading">
+          <h2 id="pc-builder-heading">Build Your PC</h2>
+          <p id="component-count"></p>
+        </div>
+
+        <div class="component-controls">
+          <div class="control-group">
+            <label for="search">Search Components</label>
+            <input
+              type="search"
+              id="search"
+              placeholder="Search by name, category, or description..."
+            />
+          </div>
+
+          <div class="control-group">
+            <label for="category-filter">Category</label>
+            <select id="category-filter">
+              <option value="all">All Categories</option>
+              <option value="CPU">CPU</option>
+              <option value="GPU">GPU</option>
+              <option value="Motherboard">Motherboard</option>
+              <option value="RAM">RAM</option>
+              <option value="Storage">Storage</option>
+              <option value="Case">Case</option>
+            </select>
+          </div>
+
+          <div class="control-group reset-group">
+            <button id="reset-filters" type="button">
+              Reset Filters
+            </button>
+          </div>
+        </div>
+
+        <div class="component-list" id="component-list"></div>
+      </section>
+    </main>
+    
+    <footer class="site-footer">
+          <p>Easy PC Builder</p>
+    </footer>
+
+    <script src="script.js"></script>
+      
+  </body>
+</html>
